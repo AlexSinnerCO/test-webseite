@@ -15,6 +15,8 @@
       <a class="logo" href="#">Elektro<span>Muster</span></a>
       <nav>
         <a href="#leistungen">Leistungen</a>
+        <a href="#photovoltaik">Photovoltaik</a>
+        <a href="#spiel">Spiel</a>
         <a href="#zeiten">Öffnungszeiten</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
@@ -36,7 +38,38 @@
         <article><h3>Elektroinstallation</h3><p>Neubau und Altbau, vom Zählerschrank bis zur Steckdose.</p></article>
         <article><h3>Smart Home</h3><p>Licht, Heizung und Rollläden bequem per App steuern.</p></article>
         <article><h3>E-Mobilität</h3><p>Wallbox-Installation inklusive Anmeldung beim Netzbetreiber.</p></article>
+        <article><h3>Photovoltaik</h3><p>Solaranlage und Speicher: Planung, Montage und Anschluss.</p></article>
         <article><h3>Prüfung</h3><p>E-Check und DGUV-V3-Prüfung für Haushalt und Gewerbe.</p></article>
+      </div>
+    </section>
+
+    <section id="photovoltaik" class="wrap">
+      <h2>Photovoltaik: Strom vom eigenen Dach</h2>
+      <div class="pv">
+        <img src="img/photovoltaik.jpg" width="1200" height="900" loading="lazy"
+             alt="Einfamilienhaus mit dunklem Ziegeldach und großer Photovoltaikanlage bei blauem Himmel">
+        <div>
+          <p>Mit einer Solaranlage senken Sie Ihre Stromkosten und machen sich unabhängiger vom Strompreis. Wir begleiten Sie vom ersten Gespräch bis zur fertigen Anlage.</p>
+          <ul class="haken">
+            <li>Kostenlose Beratung vor Ort und Prüfung Ihres Dachs</li>
+            <li>Planung passend zu Ihrem Verbrauch, auf Wunsch mit Speicher</li>
+            <li>Montage, Anschluss und Anmeldung beim Netzbetreiber</li>
+            <li>Kombinierbar mit Wallbox und Wärmepumpe</li>
+          </ul>
+          <a class="knopf" href="#kontakt">Beratung anfragen</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="spiel" class="wrap">
+      <h2>Kleines Schaltkreis-Rätsel</h2>
+      <p>Bring alle 9 Lampen zum Leuchten. Aber Vorsicht: Jeder Schalter schaltet seine Lampe <strong>und</strong> die direkten Nachbarn oben, unten, links und rechts um.</p>
+      <div class="spiel">
+        <div id="feld" class="feld" role="grid" aria-label="Lampenfeld 3 mal 3"></div>
+        <div class="spiel-info">
+          <p id="status" aria-live="polite">Züge: 0</p>
+          <button type="button" id="neu" class="knopf knopf-klein">Neues Rätsel</button>
+        </div>
       </div>
     </section>
 
@@ -52,7 +85,7 @@
     <section id="kontakt" class="wrap">
       <h2>Kontakt</h2>
       <p>Elektro Muster · Musterstraße 1 · 12345 Musterstadt<br>
-      Telefon: 01234 567890 · E-Mail: info@example.com</p>
+      Telefon: 01234 567890 · E-Mail: <a href="mailto:info@elektroasme.com">info@elektroasme.com</a></p>
     </section>
   </main>
 
@@ -62,5 +95,6 @@
       <p>© 2026 Elektro Muster (Demo)</p>
     </div>
   </footer>
+  <script src="spiel.js" defer></script>
 </body>
 </html>
