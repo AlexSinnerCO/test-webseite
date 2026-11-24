@@ -1,0 +1,33 @@
+:root {
+  --blau: #0b3d91;
+  --gelb: #f5b700;
+  --text: #1c1f24;
+  --hell: #f4f6fa;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; /* Systemschrift: keine externen Server */
+  color: var(--text);
+  background: #fff;
+  line-height: 1.6;
+}
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.demo-hinweis { background: var(--gelb); text-align: center; font-size: .85rem; padding: 6px 16px; }
+.kopf { background: var(--blau); color: #fff; }
+.kopf-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; padding-top: 14px; padding-bottom: 14px; }
+.logo { color: #fff; font-weight: 800; font-size: 1.4rem; text-decoration: none; }
+.logo span { color: var(--gelb); }
+nav a { color: #fff; text-decoration: none; margin-left: 18px; }
+nav a:hover, nav a:focus { text-decoration: underline; }
+.hero { background: linear-gradient(135deg, var(--blau), #1f5fd1); color: #fff; padding: 72px 0; }
+.hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 0 0 12px; line-height: 1.2; }
+.knopf { display: inline-block; margin-top: 16px; background: var(--gelb); color: var(--text); padding: 12px 22px; border-radius: 6px; font-weight: 700; text-decoration: none; }
+section.wrap { padding-top: 48px; }
+.karten { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.karten article { background: var(--hell); border-radius: 8px; padding: 18px; border-top: 4px solid var(--gelb); }
+.karten h3 { margin: 0 0 6px; color: var(--blau); }
+.zeiten { border-collapse: collapse; width: 100%; max-width: 480px; }
+.zeiten th, .zeiten td { text-align: left; padding: 8px 0; border-bottom: 1px solid #dde2ea; }
+.fuss { margin-top: 64px; background: var(--text); color: #cfd5df; padding: 24px 0; font-size: .9rem; }
+.fuss a { color: #fff; }
