@@ -31,18 +31,3 @@ section.wrap { padding-top: 48px; }
 .zeiten th, .zeiten td { text-align: left; padding: 8px 0; border-bottom: 1px solid #dde2ea; }
 .fuss { margin-top: 64px; background: var(--text); color: #cfd5df; padding: 24px 0; font-size: .9rem; }
 .fuss a { color: #fff; }
-.pv { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
-.pv img { width: 100%; height: auto; border-radius: 8px; display: block; }
-.haken { padding-left: 0; list-style: none; }
-.haken li { padding-left: 26px; position: relative; margin-bottom: 6px; }
-.haken li::before { content: "✓"; position: absolute; left: 0; color: var(--blau); font-weight: 800; }
-@media (max-width: 720px) { .pv { grid-template-columns: 1fr; } }
-.spiel { display: flex; flex-wrap: wrap; gap: 24px; align-items: center; }
-.feld { display: grid; grid-template-columns: repeat(3, 72px); gap: 10px; }
-.lampe { width: 72px; height: 72px; border-radius: 12px; border: 2px solid #c9d1de; background: #2a2f38; cursor: pointer; font-size: 2rem; transition: background .15s, box-shadow .15s; }
-.lampe span { filter: grayscale(1) brightness(.5); transition: filter .15s; }
-.lampe.an { background: #fff7d1; border-color: var(--gelb); box-shadow: 0 0 18px rgba(245, 183, 0, .7); }
-.lampe.an span { filter: none; }
-.lampe:focus-visible, .knopf:focus-visible { outline: 3px solid var(--blau); outline-offset: 2px; }
-.lampe:disabled { cursor: default; opacity: 1; color: inherit; }
-.knopf-klein { margin-top: 0; padding: 8px 16px; border: 0; cursor: pointer; font: inherit; font-weight: 700; }
